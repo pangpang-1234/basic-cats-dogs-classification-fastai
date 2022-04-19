@@ -46,3 +46,30 @@ random show images
 ```
 dls.show_batch()
 ```
+## Train
+Define data to train (dls), which model to use (in this project I use ResNet18) and which metrics to evaluate.
+```
+learn = cnn_learner(dls, 
+                    resnet18, 
+                    metrics=[accuracy,error_rate])
+learn = learn.to_fp16()
+```
+Now training time! Define epochs and learning rate (I trained 2 epochs with learning rate = 1e-3)
+```
+learn.fine_tune(2, 1e-3)
+learn.show_results()
+```
+This is the results
+
+## Predict
+Create test set from test path
+```
+fnames = get_image_files('/content/drive/Shareddrives/SuperAI/Kaggle/dogs vs cats/test')
+```
+Predict all of testset saving in prediction dataframe.
+```root_dir = '/content/drive/Shareddrives/SuperAI/Kaggle/dogs vs cats/test'
+prediction = {'id': [], 'label': []}
+for idx, file in tqdm(enumerate(os.listdir(root_dir))):
+    prediction['id'].append(idx+1)
+    prediction['label'].append(learn.predict(fnames[idx])[0])
+```
