@@ -57,7 +57,7 @@ dls.show_batch()
 </div>
                     
 ## Train
-Define data to train (dls), which model to use (this project using ResNet18) and which metrics to evaluate.
+Define data for training model(dls), architecture(this project using ResNet18) and metrics for evaluation.
 ```
 learn = cnn_learner(dls, 
                     resnet18, 
