@@ -76,10 +76,10 @@ learn.show_results()
     <img src="https://user-images.githubusercontent.com/59856773/163974516-562e0961-4986-4aae-ba39-93ca6bd89c32.png"/>
 </div>
 
-The result are great! Accuracy are around 0.98 and 0.99 and random show images with predictions are correct.
+Result are great! Accuracy are around 0.98 and 0.99 and random show images with predictions are correct.
 
 ## Predict
-Create test set from test path
+Create testset from test path
 ```
 fnames = get_image_files('/content/drive/Shareddrives/SuperAI/Kaggle/dogs vs cats/test')
 ```
