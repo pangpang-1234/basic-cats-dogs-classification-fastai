@@ -8,7 +8,7 @@
 ## About
 I use dataset from dogs vs cats kaggle datasets to explore fastai features. This project using ResNet18 with FastAI to classify images between dog and cat. I straightforward to use FastAI, so there are no preprocess or explore data in this project. Remember that FastAI only work with Pytorch, don't forget to use Pytorch while training model with FastAI. 
 ## Let's start! Setup
-Firstly, we have to install FastAI packages with this command
+Firstly, we have to install FastAI package with this command
 ```
 pip install -qq fastai --upgrade
 ```
