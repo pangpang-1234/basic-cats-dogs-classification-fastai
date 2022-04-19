@@ -91,5 +91,6 @@ for idx, file in tqdm(enumerate(os.listdir(root_dir))):
     prediction['label'].append(learn.predict(fnames[idx])[0])
 ```
 ### Warning, long prediction time!! This FastAI project takes almost 4 hours to predict 12,500 images.
-
+                      
+Thanks to Korawvich Sangkaew for sharing FastAI knowledge.
 
