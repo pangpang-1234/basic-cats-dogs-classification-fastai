@@ -47,7 +47,10 @@ random show images
 ```
 dls.show_batch()
 ```
-![cute](https://user-images.githubusercontent.com/59856773/163974404-a10ec85a-c35c-45bd-b3ea-2c54848a3713.png)
+<div align="center"'>
+    <img src="https://user-images.githubusercontent.com/59856773/163974404-a10ec85a-c35c-45bd-b3ea-2c54848a3713.png" alt="Dog"/>
+</div>
+                    
 ## Train
 Define data to train (dls), which model to use (in this project I use ResNet18) and which metrics to evaluate.
 ```
@@ -60,10 +63,13 @@ Now training time! Define epochs and learning rate (I trained 2 epochs with lear
 ```
 learn.fine_tune(2, 1e-3)
 learn.show_results()
-``` 
-<img width="485" alt="Screen Shot 2565-04-19 at 16 27 22" src="https://user-images.githubusercontent.com/59856773/163974473-77d100b8-b90e-44fe-ab19-649dd75a1c4d.png">
-
-![result](https://user-images.githubusercontent.com/59856773/163974516-562e0961-4986-4aae-ba39-93ca6bd89c32.png)
+```
+<div align="center"'>
+    <img width="485" alt="Screen Shot 2565-04-19 at 16 27 22" src="https://user-images.githubusercontent.com/59856773/163974473-77d100b8-b90e-44fe-ab19-649dd75a1c4d.png">
+</div>
+<div align="center"'>
+    <img src="https://user-images.githubusercontent.com/59856773/163974516-562e0961-4986-4aae-ba39-93ca6bd89c32.png"/>
+</div>
 
 The result are great! Accuracy are around 0.98 and 0.99 and random show images with predictions are correct.
 
