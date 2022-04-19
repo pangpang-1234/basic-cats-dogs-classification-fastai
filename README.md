@@ -18,7 +18,7 @@ import fastai
 from fastai.vision.all import *
 from fastai.vision.augment import *
 ```
-Check availabel of GPU and check what device that we're using. If we're using GPU this code will print True 
+Check available of GPU and check which device we're using. If we're using GPU this code will print True 
 ```
 use_cuda = torch.cuda.is_available()
 print(use_cuda)
