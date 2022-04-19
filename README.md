@@ -48,7 +48,7 @@ Use DataLoader to prepare datasets
 ```
 dls = ImageDataLoaders.from_df(df, path_train, folder=None, device = 'cuda', item_tfms=Resize(224, 224))
 ```
-random show images
+random show images and thier labels
 ```
 dls.show_batch()
 ```
