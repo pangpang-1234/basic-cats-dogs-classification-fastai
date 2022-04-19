@@ -1,4 +1,9 @@
 # Dogs and cats classification using FastAI
+## Connect with me
+
+<a href="https://www.linkedin.com/in/piyapadech/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+</a>
 
 ## About
 I use dataset from dogs vs cats kaggle datasets to explore fastai features. This project using ResNet18 with FastAI to classify images between dog and cat. I straightforward to use FastAI, so there are no preprocess or explore data present in this project. Remember that FastAI only work with Pytorch, don't forget to use Pytorch while training model with FastAI. 
@@ -87,8 +92,4 @@ for idx, file in tqdm(enumerate(os.listdir(root_dir))):
 ```
 ### Warning, long prediction time!! This FastAI project takes almost 4 hours to predict 12,500 images.
 
-## Connect with me
 
-<a href="https://www.linkedin.com/in/piyapadech/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-</a>
