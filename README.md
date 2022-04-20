@@ -48,7 +48,7 @@ Use DataLoader to prepare datasets
 ```
 dls = ImageDataLoaders.from_df(df, path_train, folder=None, device = 'cuda', item_tfms=Resize(224, 224))
 ```
-random show images and thier labels
+random show images and thier labels by show_batch 
 ```
 dls.show_batch()
 ```
@@ -64,7 +64,7 @@ learn = cnn_learner(dls,
                     metrics=[accuracy,error_rate])
 learn = learn.to_fp16()
 ```
-Now training time! Define epochs and learning rate (I trained 2 epochs with learning rate = 1e-3)
+Now training time! Define epochs and learning rate (I trained 2 epochs with learning rate = 1e-3) to learn.fine_tune and use learn.show_results() to view the result
 ```
 learn.fine_tune(2, 1e-3)
 learn.show_results()
@@ -76,10 +76,10 @@ learn.show_results()
     <img src="https://user-images.githubusercontent.com/59856773/163974516-562e0961-4986-4aae-ba39-93ca6bd89c32.png"/>
 </div>
 
-Result are great! Accuracy are around 0.98 and 0.99 and random show images with predictions are correct.
+The result is great! Accuracy are around 0.98 and 0.99 and random show images with predictions are correct.
 
 ## Predict
-Create testset from test path
+Create testset from test path by get_image_files
 ```
 fnames = get_image_files('/content/drive/Shareddrives/SuperAI/Kaggle/dogs vs cats/test')
 ```
